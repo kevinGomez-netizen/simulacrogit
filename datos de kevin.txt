@@ -1,2 +1,18 @@
 git config --global user.name "kevinGomez-netizen"
 git config --global user.email "calvitov@gmail.com"
+
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #FFC107; /* Amarillo */
+    color: #000; /* Negro */
+    padding: 20px 0;
