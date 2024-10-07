@@ -153,15 +153,3 @@ CREATE TABLE IF NOT EXISTS `mydb`.`empleados` (
   `ventas_total` INT NOT NULL,
   PRIMARY KEY (`id del empleado`),
   UNIQUE INDEX `id del empleado_UNIQUE` (`id del empleado` ASC) VISIBLE,
-  INDEX `fk_empleados_ventas1_idx` (`ventas_codigo de venta` ASC, `ventas_total` ASC) VISIBLE,
-  CONSTRAINT `fk_empleados_ventas1`
-    FOREIGN KEY (`ventas_codigo de venta` , `ventas_total`)
-    REFERENCES `mydb`.`ventas` (`codigo de venta` , `total`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
-SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
